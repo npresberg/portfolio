@@ -1,6 +1,6 @@
-$('#menu a').click(function(e){
+$('#menu a').click(function(e) {
 	var pos = $('#footer').offset().top;
-	$('html,body').animate({ scrollTop: pos}, 700);
+	$('html,body').animate({ scrollTop: pos }, 700);
 	return false;
 });
 
@@ -8,16 +8,18 @@ $('.proyecto .fotos').each(function(i) {
 	var links = $(this).find('a').attr('rel', 'f' + i);
 	$(this).click(function(e) {
 		$.fancybox(links, {
-			loop:false, prevEffect:'fade', nextEffect:'fade'
+			loop: false,
+			prevEffect: 'fade',
+			nextEffect: 'fade'
 		});
 	});
 });
 
-$('form').on('submit',function(e){
+$('form').on('submit', function(e) {
 	e.preventDefault();
-	
+
 	var form = $(this);
-	form.children('[name]').removeClass('error').each(function(){
+	form.children('[name]').removeClass('error').each(function() {
 		var elem = $(this);
 		var value = elem.val();
 		if (!value || elem.attr('name') === 'email' && !/^[^@]+@[^@.]+\..+/.test(value)) {
