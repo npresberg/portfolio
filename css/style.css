@@ -1,0 +1,263 @@
+body, ul, li, h1, h2, h3, input, textarea {
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+
+body {
+  font-family: Helvetica, Arial;
+}
+
+.link {
+  color:#F7931E;
+  text-decoration: none !important;
+}
+
+#mar {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 363px;
+  display: block;
+}
+
+#encabezado {
+  padding-top:100px;
+  width: 762px;
+  height: 470px;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+
+#menu {
+  position: fixed;
+  left:0;
+  top:50%;
+  -webkit-transform:translate(0, -50%);
+  -moz-transform:translate(0, -50%);
+  -ms-transform:translate(0, -50%);
+  -o-transform:translate(0, -50%);
+  transform:translate(0, -50%);
+}
+
+#pagina {
+  background: url(../img/site/arena.png);
+}
+
+#proyectos {
+  margin:0 auto;
+  padding: 40px 0;
+  width: 800px;
+
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  -o-user-select:none;
+  user-select:none;
+}
+  #proyectos .proyecto {
+    position: relative;
+    width: 650px;
+    height: 235px;
+    padding: 24px 70px;
+    border-top: 3px dotted #F7931E;
+    color:white;
+  }
+
+  #proyectos .proyecto .bg {
+    background: rgb(73, 42, 23);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    position: absolute;
+    top: 0; left:0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #proyectos .proyecto.primero {
+    border-top: none;
+  }
+
+    #proyectos .info {
+      position: relative;
+      float:left;
+      margin-top:26px;
+      width:300px;
+      font-size: 13px;
+      text-align: justify;
+      z-index: 1;
+    }
+
+      #proyectos h2 {
+        text-transform: uppercase;
+        font-size: 13px;
+      }
+
+    #proyectos .fotos {
+      position: relative;
+      float:right;
+      width: 312px;
+      height: 237px;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+      #proyectos .fotos a {
+        -webkit-transform:translate3d(0,0,0);
+        -moz-transform:translate3d(0,0,0);
+        -ms-transform:translate3d(0,0,0);
+        -o-transform:translate3d(0,0,0);
+        transform:translate3d(0,0,0);
+        display: inline-block;
+        position: relative;
+      }
+      
+        #proyectos .fotos .thumb {
+          width: 300px;
+          height: 225px;
+          border:6px solid white;
+          cursor: pointer;
+        }
+
+        #proyectos .fotos::after {
+          content:"VER MAS";
+          position: absolute;
+          bottom: 10px;
+          right: 10px;
+          cursor: pointer;
+          color:#F7931E;
+          font-size: 13px;
+        }
+
+
+    #proyectos .paginador {
+      position: absolute;
+      width: 15px;
+      height: 62px;
+      cursor: pointer;
+      background-repeat: no-repeat;
+    }
+
+    #proyectos .paginador.hidden {
+      visibility: hidden;
+    }
+
+      #proyectos .paginador.anterior {
+        background-image: url(../img/site/anterior.png);
+        right: 383px;
+        top: 200px;
+      }
+
+      #proyectos .paginador.siguiente {
+        background-image: url(../img/site/siguiente.png);
+        right: 52px;
+        top: 30px;
+      }
+
+#footer {
+  width: 100%;
+  padding:40px 0;
+  background: url(../img/site/piedra.png);
+}
+
+  #footer ul {
+    overflow: hidden;
+    color:white;
+    margin: 0 auto;
+    width: 880px;
+  }
+
+  #footer li {
+    height: 230px;
+    float:left;
+    margin:0 10px;
+    position: relative;
+  }
+
+  #footer .about {
+    width: 290px;
+  }
+
+  #footer .skills {
+    width: 216px;
+  }
+
+  #footer .skills,
+  #footer .about {
+    padding:25px 15px;
+    background: rgba(73, 42, 23, 0.85);
+  }
+
+  #footer h3 {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+    #footer h3 span {
+      color:#F7931E;
+    }
+
+  #footer p {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  #footer .contacto.enviado h3 {
+    height: 250px;
+  }
+
+  #footer .contacto.enviado form {
+    display: none;
+  }
+
+  #footer .contacto input,
+  #footer .contacto h3,
+  #footer .contacto textarea {
+    background: rgba(73, 42, 23, 0.85);
+    display: block;
+    border:none;
+    width: 216px;
+    margin:13px 0;
+    padding:14px 15px;
+    color:white;
+  }
+
+  #footer .error {
+    color:red !important;
+  }
+
+  #footer .contacto input {
+    font-size: 16px;
+    height: 16px;
+  }
+
+  #footer .contacto h3 {
+    height: 20px;
+    line-height: 20px;
+    margin-top:0;
+  }
+
+  #footer .contacto form {
+    position: relative;
+  }
+
+  #footer .contacto textarea {
+    height: 75px;
+    font-size: 16px;
+  }
+
+  #footer .contacto .submit {
+    background: #F7931E;
+    position: absolute;
+    bottom:5px;
+    right:5px;
+    padding: 0;
+    margin:0;
+    width: 70px;
+    height: 25px;
+    cursor: pointer;
+  }
