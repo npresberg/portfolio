@@ -87,7 +87,7 @@ body {
       margin-top:26px;
       width:300px;
       font-size: 13px;
-      text-align: justify;
+      text-align: left;
       z-index: 1;
     }
 
@@ -261,3 +261,20 @@ body {
     height: 25px;
     cursor: pointer;
   }
+
+  #footer .footermail{
+  background-color:#F7931E;
+  color: #FFF;
+  margin-top: 30px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+  #footermail .a{
+  color: #FFF;
+  margin-top: 30px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
