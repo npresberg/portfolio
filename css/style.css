@@ -161,6 +161,7 @@ body {
   width: 100%;
   padding:40px 0 0 0;
   background: url(../img/site/piedra.png);
+  padding: 40px 0 0 0;
 }
 
   #footer ul {
@@ -271,11 +272,9 @@ body {
   padding-bottom: 10px;
 }
 
-  #footer .mail{
+  .email {
+  top: -3px;
+  position: relative;
+  margin-left: 24px;
   color: #FFF;
-  margin-top: 30px;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-left:48px
 }
